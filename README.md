@@ -21,6 +21,9 @@ More information and a visualization tool for the dataset is available on the
 [GPCC website](https://www.dwd.de/EN/ourservices/gpcc/gpcc.html).
 For a review of the data check the
 [UCAR Climate Data Guide](https://climatedataguide.ucar.edu/climate-data/gpcc-global-precipitation-climatology-centre).
+
+## Data download
+
 The data was downloaded from the [GPCC data server](https://opendata.dwd.de/climate_environment/GPCC/).
 
 ## Data location
