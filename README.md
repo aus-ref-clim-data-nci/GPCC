@@ -136,3 +136,7 @@ No statement provided.
 According to the [GPCC product acccess page](https://www.dwd.de/EN/ourservices/gpcc/editorial/userterms_gpcc.html?nn=495490&lsbId=353848),
 users of the data sets are kindly requested to give feedback and to refer to the GPCC publications
 listed in the references section above.
+
+## Assistance
+
+For assistance with GPCC data on NCI, open a new issue at https://github.com/nci-ref-clim-data/GPCC/issues
