@@ -49,11 +49,9 @@ where `<version>` is:
 
 ## License
 
-According to the [GPCC product acccess page](https://www.dwd.de/EN/ourservices/gpcc/editorial/userterms_gpcc.html?nn=495490&lsbId=353848),
-users of the data sets are kindly requested to give feedback and to refer to the GPCC publications
-listed in the references section below.
+Unknown.
 
-## Data Citations
+## Data citations
 
 v2020 daily:
 - Ziese, Markus; Rauthe-Schöch, Armin; Becker, Andreas; Finger, Peter; Rustemeier, Elke; Schneider, Udo (2020):
@@ -126,3 +124,12 @@ Global gridded precipitation over land: a description of the new GPCC First Gues
 *Earth System Science Data*, 6, 49–60.
 https://doi.org/10.5194/essd-6-49-2014
 
+## Acknowledgement
+
+No statement provided.
+
+## Author note
+
+According to the [GPCC product acccess page](https://www.dwd.de/EN/ourservices/gpcc/editorial/userterms_gpcc.html?nn=495490&lsbId=353848),
+users of the data sets are kindly requested to give feedback and to refer to the GPCC publications
+listed in the references section above.
