@@ -95,3 +95,17 @@ v2018 monthly (different citations for each resolution):
   GPCC Full Data Monthly Product Version 2018 at 2.5°:
   Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
   https://doi.org/10.5676/DWD_GPCC/FD_M_V2018_250
+  
+## References
+
+Becker A, Finger P, Meyer-Christoffer A, Rudolf B, Schamm K, Schneider U, and Ziese M (2013).
+A description of the global land-surface precipitation data products of the Global Precipitation Climatology Centre
+with sample applications including centennial (trend) analysis from 1901–present.
+*Earth Systems Science Data*, 5, 71–99.
+https://doi.org/10.5194/essd-5-71-2013
+ 
+Schneider U, Becker A, Finger P, et al (2014).
+GPCC's new land surface precipitation climatology based on quality-controlled in situ data
+and its role in quantifying the global water cycle.
+*Theoretical and Applied Climatology*, 115, 15–40.
+https://doi.org/10.1007/s00704-013-0860-x
