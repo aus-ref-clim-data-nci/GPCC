@@ -47,6 +47,12 @@ where `<version>` is:
 - `10` for 1.0 x 1.0
 - `25` for 2.5 x 2.5
 
+## License
+
+According to the [GPCC product acccess page](https://www.dwd.de/EN/ourservices/gpcc/editorial/userterms_gpcc.html?nn=495490&lsbId=353848),
+users of the data sets are kindly requested to give feedback and to refer to the GPCC publications
+listed in the references section below.
+
 ## Data Citations
 
 v2020 daily:
@@ -104,8 +110,19 @@ with sample applications including centennial (trend) analysis from 1901–prese
 *Earth Systems Science Data*, 5, 71–99.
 https://doi.org/10.5194/essd-5-71-2013
  
-Schneider U, Becker A, Finger P, et al (2014).
+Schneider U, Becker A, Finger P, Meyer-Christoffer A, Ziese M, and Rudolf B (2014).
 GPCC's new land surface precipitation climatology based on quality-controlled in situ data
 and its role in quantifying the global water cycle.
 *Theoretical and Applied Climatology*, 115, 15–40.
 https://doi.org/10.1007/s00704-013-0860-x
+
+Ziese M, Schneider U, Meyer-Christoffer A, Schamm K, Vido J, Finger P, Bissolli P, Pietzsch S, and Becker A (2014).
+The GPCC Drought Index – a new, combined and gridded global drought index
+*Earth Systems Science Data* 6, 285–295.
+https://doi.org/10.5194/essd-6-285-2014 
+
+Schamm K, Ziese M, Becker A, Finger P, Meyer-Christoffer A, Schneider U, Schröder M, and Stender P (2014).
+Global gridded precipitation over land: a description of the new GPCC First Guess Daily product.
+*Earth System Science Data*, 6, 49–60.
+https://doi.org/10.5194/essd-6-49-2014
+
