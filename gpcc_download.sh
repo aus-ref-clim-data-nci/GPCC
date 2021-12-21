@@ -34,7 +34,18 @@
 
 url=https://opendata.dwd.de/climate_environment/GPCC/full_data
 datadir=/g/data/ia39/gpcc/replica/data/full_data
+# wget flags
+# -np no parent directories
+# -nd download only files
+# -S keep remote timestamp
+# -N download only if remote timestamp more recent
 for grid in 025 05 10 25; do
-    wget -r -np -R "index.html*" -O ${datadir}_monthly_v2020/${grid} ${url}_monthly_v2020/${grid}/
+    wget -r -np -nd -N -S -R "index.html*" -P ${datadir}_monthly_v2020/${grid} ${url}_monthly_v2020/${grid}/
+    for f in $(ls ${datadir}_monthly_v2020/${grid}/*.gz); do
+	    gunzip $f
+    done
 done
-wget -r -np -R "index.html*" -O ${datadir}_daily_v2020/10 ${url}_daily_v2020/ 
+wget -r -np -nd -N -S -R "index.html*" -P ${datadir}_daily_v2020/10 ${url}_daily_v2020/ 
+for f in $(ls ${datadir}_daily_v2020/10/*.gz); do
+    gunzip $f
+done
