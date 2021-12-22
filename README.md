@@ -4,7 +4,7 @@
 
 The Global Precipitation Climatology Centre (GPCC) provides gridded gauge-analysis products derived from quality controlled station data.
 There are different products available; we only downloaded the full reanalysis.
-The latest version of the full reanalysis is V2020
+The latest version of the full reanalysis is v2020
 [monthly](https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-monthly_v2020_doi_download.html) and
 [daily](https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-daily_v2020_doi_download.html)
 that covers from 1891 to 2019.
@@ -31,17 +31,17 @@ A record of updates is kept in update_log.txt
 
 ## Data location
 
-We've downloaded GPCC data to,
+We've downloaded GPCC data to
 
 ```
-/g/data/ia39/gpcc/replica/data/<version>/<frequency>/<grid>/<files>
+/g/data/ia39/gpcc/replica/data/full_data_<frequency>_<version>/<grid>/<files>
 ```
 where `<version>` is:
-- `V1`: daily data only on 1.0 X 1.0 degree grid
-- `V6`: monthly data only on a 0.5 X 0.5 degree grid from 1901 to 2010
-- `V7`: monthly data only on 0.5 X 0.5 and 2.5 X 2.5 degrees grid from 1901 to 2013
-- `V2018`: on 4 grids for monthly and 1.0 X 1.0 grid for daily (as for V2020), from 1891 to 2016
-- `V2020`: full dataset as described in overview 
+- `v1`: daily data only on 1.0 X 1.0 degree grid
+- `v6`: monthly data only on a 0.5 X 0.5 degree grid from 1901 to 2010
+- `v7`: monthly data only on 0.5 X 0.5 and 2.5 X 2.5 degrees grid from 1901 to 2013
+- `v2018`: on 4 grids for monthly and 1.0 X 1.0 grid for daily (as for V2020), from 1891 to 2016
+- `v2020`: full dataset as described in overview 
 
 `<frequency>` is:
 - `mon`
