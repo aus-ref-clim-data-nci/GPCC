@@ -27,25 +27,28 @@
 # where <grid> is the grid resolution 025, 05, 10, 25 respectively for 0.25, 0.5, 1.0, 2.5 degrees
 #
 # To run the script ./gpcc_download.sh 
-# record of updated files is kept in /g/data/ia39/replica/gpcc/data/updates.txt
+# record of updated files is kept in /g/data/ia39/replica/gpcc/data/update_log.txt
 #
 # Last change:
 # 2021-12-22
 
 url=https://opendata.dwd.de/climate_environment/GPCC/full_data
-datadir=/g/data/ia39/gpcc/replica/data/full_data
+data_dir=/g/data/ia39/gpcc/replica/data/full_data
+code_dir=/g/data/ia39/gpcc/replica/data/full_data
+today=$(date "+%Y-%m-%d")
 # wget flags
 # -np no parent directories
 # -nd download only files
 # -S keep remote timestamp
 # -N download only if remote timestamp more recent
 for grid in 025 05 10 25; do
-    wget -r -np -nd -N -S -R "index.html*" -P ${datadir}_monthly_v2020/${grid} ${url}_monthly_v2020/${grid}/
-    for f in $(ls ${datadir}_monthly_v2020/${grid}/*.gz); do
+    wget -r -np -nd -N -S -R "index.html*" -P ${data_dir}_monthly_v2020/${grid} ${url}_monthly_v2020/${grid}/
+    for f in $(ls ${data_dir}_monthly_v2020/${grid}/*.gz); do
 	    gunzip $f
     done
 done
-wget -r -np -nd -N -S -R "index.html*" -P ${datadir}_daily_v2020/10 ${url}_daily_v2020/ 
-for f in $(ls ${datadir}_daily_v2020/10/*.gz); do
+wget -r -np -nd -N -S -R "index.html*" -P ${data_dir}_daily_v2020/10 ${url}_daily_v2020/ 
+for f in $(ls ${data_dir}_daily_v2020/10/*.gz); do
     gunzip $f
 done
+echo "Updated on ${today} by ${USER}" >> ${code_dir}/update_log.txt 

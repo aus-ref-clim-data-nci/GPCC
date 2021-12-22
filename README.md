@@ -24,7 +24,10 @@ For a review of the data check the
 
 ## Data download
 
-The data was downloaded from the [GPCC data server](https://opendata.dwd.de/climate_environment/GPCC/).
+The data is downloaded from the [GPCC data server](https://opendata.dwd.de/climate_environment/GPCC/).
+Updates are run once a new version is released. 
+To run the script ./gpcc_download.sh 
+A record of updates is kept in update_log.txt
 
 ## Data location
 
