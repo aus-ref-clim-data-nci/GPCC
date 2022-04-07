@@ -27,14 +27,15 @@
 # where <grid> is the grid resolution 025, 05, 10, 25 respectively for 0.25, 0.5, 1.0, 2.5 degrees
 #
 # To run the script ./gpcc_download.sh 
-# record of updated files is kept in /g/data/ia39/replica/gpcc/data/update_log.txt
+# record of updated files is kept in /g/data/ia39/aus-ref-clim-data-nci/gpcc/replica/data/update_log.txt
 #
 # Last change:
 # 2021-12-22
+# 2022-04-07 - Move directory
 
 url=https://opendata.dwd.de/climate_environment/GPCC/full_data
-data_dir=/g/data/ia39/gpcc/replica/data/full_data
-code_dir=/g/data/ia39/gpcc/replica/data/full_data
+data_dir=/g/data/ia39/aus-ref-clim-data-nci/gpcc/replica/data/full_data
+code_dir=/g/data/ia39/aus-ref-clim-data-nci/gpcc/replica/data/full_data
 today=$(date "+%Y-%m-%d")
 # wget flags
 # -np no parent directories

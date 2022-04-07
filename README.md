@@ -34,7 +34,7 @@ A record of updates is kept in `update_log.txt`.
 We've downloaded GPCC data to
 
 ```
-/g/data/ia39/gpcc/replica/data/full_data_<frequency>_<version>/<grid>/<files>
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/replica/data/full_data_<frequency>_<version>/<grid>/<files>
 ```
 where `<version>` is:
 - `v1`: daily data only on 1.0 X 1.0 degree grid
@@ -142,4 +142,4 @@ listed in the references section above.
 
 ## Assistance
 
-For assistance with GPCC data on NCI, open a new issue at https://github.com/nci-ref-clim-data/GPCC/issues
+For assistance with GPCC data on NCI, open a new issue at https://github.com/aus-ref-clim-data-nci/GPCC/issues
