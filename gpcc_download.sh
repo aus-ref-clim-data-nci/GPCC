@@ -23,19 +23,21 @@
 # Current version is v2020
 #
 # The dataset is stored in 
-#     /g/data/ia39/gpcc/replica/data/full_data_<frequency>_<version>/<grid>/<files>
+#     /g/data/ia39/gpcc/data/full_data_<frequency>_<version>/<grid>/<files>
 # where <grid> is the grid resolution 025, 05, 10, 25 respectively for 0.25, 0.5, 1.0, 2.5 degrees
 #
 # To run the script ./gpcc_download.sh 
-# record of updated files is kept in /g/data/ia39/aus-ref-clim-data-nci/gpcc/replica/data/update_log.txt
+# record of updated files is kept in /g/data/ia39/aus-ref-clim-data-nci/gpcc/data/update_log.txt
 #
 # Last change:
 # 2021-12-22
 # 2022-04-07 - Move directory
+# 2022-04-12 - remove replica folder and introduce $AUSREFDIR
 
 url=https://opendata.dwd.de/climate_environment/GPCC/full_data
-data_dir=/g/data/ia39/aus-ref-clim-data-nci/gpcc/replica/data/full_data
-code_dir=/g/data/ia39/aus-ref-clim-data-nci/gpcc/replica/data/full_data
+root_dir=${AUSREFDIR:-/g/data/ia39/aus-ref-clim-data-nci}
+data_dir=${root_dir}/gpcc/data/full_data
+code_dir=${root_dir}/gpcc/data/full_data
 today=$(date "+%Y-%m-%d")
 # wget flags
 # -np no parent directories
