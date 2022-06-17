@@ -4,10 +4,11 @@
 
 The Global Precipitation Climatology Centre (GPCC) provides gridded gauge-analysis products derived from quality controlled station data.
 There are different products available; we only downloaded the full reanalysis.
-The latest version of the full reanalysis is v2020
-[monthly](https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-monthly_v2020_doi_download.html) and
+The latest version of the full reanalysis is v2022 for monthly and v2020 for daily
+[monthly](https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-monthly_v2022_doi_download.html) and
 [daily](https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-daily_v2020_doi_download.html)
-that covers from 1891 to 2019.
+they cover from 1891 to respectively 2020 and 2019.
+NB. while v2022 has been released, the actual files are not yet available!
 
 The data is available on 4 global grids for monthly and only at 1.0 degrees resolution for daily:
 - 0.25 degree latitude x 0.25 degree longitude global grid (1440 x 720) - only monthly
@@ -40,12 +41,14 @@ where `<version>` is:
 - `v1`: daily data only on 1.0 X 1.0 degree grid
 - `v6`: monthly data only on a 0.5 X 0.5 degree grid from 1901 to 2010
 - `v7`: monthly data only on 0.5 X 0.5 and 2.5 X 2.5 degrees grid from 1901 to 2013
-- `v2018`: on 4 grids for monthly and 1.0 X 1.0 grid for daily (as for V2020), from 1891 to 2016
-- `v2020`: full dataset as described in overview 
+- `v2020`: on 4 grids for monthly and 1.0 X 1.0 grid for daily (as for V2022), from 1891 to 2019
+- `v2022`: full dataset as described in overview 
 
 `<frequency>` is:
 - `mon`
 - `day`
+
+Currently only 'mon' for v2022
 
 `<grid>` is:
 - `025` for 0.25 x 0.25
@@ -58,6 +61,12 @@ where `<version>` is:
 Unknown.
 
 ## Data citations
+
+v2022 monthly (different citations for each resolution):
+- Schneider, Udo; Hänsel, Stephanie; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2022): GPCC Full Data Monthly Product Version 2022 at 0.25°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data. DOI: 10.5676/DWD_GPCC/FD_M_V2022_025
+- Schneider, Udo; Hänsel, Stephanie; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2022): GPCC Full Data Monthly Product Version 2022 at 0.5°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data. DOI: 10.5676/DWD_GPCC/FD_M_V2022_050
+- Schneider, Udo; Hänsel, Stephanie; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2022): GPCC Full Data Monthly Product Version 2022 at 1.0°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data. DOI: 10.5676/DWD_GPCC/FD_M_V2022_100
+- Schneider, Udo; Hänsel, Stephanie; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2022): GPCC Full Data Monthly Product Version 2022 at 2.5°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data. DOI: 10.5676/DWD_GPCC/FD_M_V2022_250
 
 v2020 daily:
 - Ziese, Markus; Rauthe-Schöch, Armin; Becker, Andreas; Finger, Peter; Rustemeier, Elke; Schneider, Udo (2020):
@@ -81,30 +90,6 @@ v2020 monthly (different citations for each resolution):
   GPCC Full Data Monthly Product Version 2020 at 2.5°:
   Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
   https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_250
-
-v2018 daily:
-- Ziese, Markus; Rauthe-Schöch, Armin; Becker, Andreas; Finger, Peter; Meyer-Christoffer, Anja; Schneider, Udo (2018):
-  GPCC Full Data Daily Version.2018 at 1.0°:
-  Daily Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historic Data.
-  https://doi.org/10.5676/DWD_GPCC/FD_D_V2018_100
-
-v2018 monthly (different citations for each resolution):
-- Schneider, Udo; Becker, Andreas; Finger, Peter; Meyer-Christoffer, Anja; Ziese, Markus (2018):
-  GPCC Full Data Monthly Product Version 2018 at 0.25°:
-  Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
-  https://doi.org/10.5676/DWD_GPCC/FD_M_V2018_025
-- Schneider, Udo; Becker, Andreas; Finger, Peter; Meyer-Christoffer, Anja; Ziese, Markus (2018):
-  GPCC Full Data Monthly Product Version 2018 at 0.5°:
-  Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
-  https://doi.org/10.5676/DWD_GPCC/FD_M_V2018_050
-- Schneider, Udo; Becker, Andreas; Finger, Peter; Meyer-Christoffer, Anja; Ziese, Markus (2018):
-  GPCC Full Data Monthly Product Version 2018 at 1.0°:
-  Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
-  https://doi.org/10.5676/DWD_GPCC/FD_M_V2018_100
-- Schneider, Udo; Becker, Andreas; Finger, Peter; Meyer-Christoffer, Anja; Ziese, Markus (2018):
-  GPCC Full Data Monthly Product Version 2018 at 2.5°:
-  Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
-  https://doi.org/10.5676/DWD_GPCC/FD_M_V2018_250
   
 ## References
 

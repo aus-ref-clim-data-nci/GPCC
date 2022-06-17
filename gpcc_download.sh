@@ -20,7 +20,7 @@
 #     https://opendata.dwd.de/climate_environment/GPCC
 # Data is available as monthly (0.25, 0.5, 1.0, 2.5 deg) and daily files (1.0 deg),
 # updated occasionally when a new version is released
-# Current version is v2020
+# Current version is v2022
 #
 # The dataset is stored in 
 #     /g/data/ia39/gpcc/data/full_data_<frequency>_<version>/<grid>/<files>
@@ -33,11 +33,13 @@
 # 2021-12-22
 # 2022-04-07 - Move directory
 # 2022-04-12 - remove replica folder and introduce $AUSREFDIR
+# 2022-06-17 - iadded argument to select version
 
+version=$1
 url=https://opendata.dwd.de/climate_environment/GPCC/full_data
 root_dir=${AUSREFDIR:-/g/data/ia39/aus-ref-clim-data-nci}
 data_dir=${root_dir}/gpcc/data/full_data
-code_dir=${root_dir}/gpcc/data/full_data
+code_dir=${root_dir}/gpcc/code
 today=$(date "+%Y-%m-%d")
 # wget flags
 # -np no parent directories
@@ -45,13 +47,28 @@ today=$(date "+%Y-%m-%d")
 # -S keep remote timestamp
 # -N download only if remote timestamp more recent
 for grid in 025 05 10 25; do
-    wget -r -np -nd -N -S -R "index.html*" -P ${data_dir}_monthly_v2020/${grid} ${url}_monthly_v2020/${grid}/
-    for f in $(ls ${data_dir}_monthly_v2020/${grid}/*.gz); do
+    destdir="${data_dir}_monthly_${version}/${grid}"
+    echo $destdir
+    if [ -d $destdir ]; then
+        echo "Directory ${destdir} exists."
+    else
+        mkdir -p $destdir
+        wget -r -np -nd -N -S -R "index.html*" -P $destdir ${url}_monthly_${version}/${grid}/
+        for f in $(ls ${destdir}/*.gz); do
 	    gunzip $f
+        done
+    fi
+done
+destdir="${data_dir}_daily_${version}/10"
+if [ -d $destdir ]; then
+    echo "Directory ${destdir} exists."
+else
+    mkdir -p $destdir
+    wget -r -np -nd -N -S -R "index.html*" -P ${data_dir}_daily_${version}/10 ${url}_daily_${version}/ 
+    for f in $(ls ${destdir}/*.gz); do
+        gunzip $f
     done
-done
-wget -r -np -nd -N -S -R "index.html*" -P ${data_dir}_daily_v2020/10 ${url}_daily_v2020/ 
-for f in $(ls ${data_dir}_daily_v2020/10/*.gz); do
-    gunzip $f
-done
+fi
 echo "Updated on ${today} by ${USER}" >> ${code_dir}/update_log.txt 
+echo "Version: ${version}" >> ${code_dir}/update_log.txt 
+echo "" >> ${code_dir}/update_log.txt 
