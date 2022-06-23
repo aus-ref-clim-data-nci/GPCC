@@ -47,7 +47,7 @@ today=$(date "+%Y-%m-%d")
 # -S keep remote timestamp
 # -N download only if remote timestamp more recent
 for grid in 025 05 10 25; do
-    destdir="${data_dir}_monthly_${version}/${grid}"
+    destdir="${data_dir}_monthly_${version}/g${grid}"
     echo $destdir
     if [ -d $destdir ]; then
         echo "Directory ${destdir} exists."
@@ -59,7 +59,7 @@ for grid in 025 05 10 25; do
         done
     fi
 done
-destdir="${data_dir}_daily_${version}/10"
+destdir="${data_dir}_daily_${version}/g10"
 if [ -d $destdir ]; then
     echo "Directory ${destdir} exists."
 else

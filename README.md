@@ -48,13 +48,11 @@ where `<version>` is:
 - `mon`
 - `day`
 
-Currently only 'mon' for v2022
-
 `<grid>` is:
-- `025` for 0.25 x 0.25
-- `05` for 0.5 x 0.5
-- `10` for 1.0 x 1.0
-- `25` for 2.5 x 2.5
+- `g025` for 0.25 x 0.25
+- `g05` for 0.5 x 0.5
+- `g10` for 1.0 x 1.0
+- `g25` for 2.5 x 2.5
 
 ## License
 
