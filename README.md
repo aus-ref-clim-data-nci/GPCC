@@ -27,7 +27,7 @@ For a review of the data check the
 
 The data is downloaded from the [GPCC data server](https://opendata.dwd.de/climate_environment/GPCC/).
 Updates are run once a new version is released. 
-To run the script: `./gpcc_download.sh`. 
+To run the script: `./gpcc.sh`. 
 A record of updates is kept in `update_log.txt`.
 
 ## Data location
@@ -35,7 +35,7 @@ A record of updates is kept in `update_log.txt`.
 We've downloaded GPCC data to
 
 ```
-/g/data/ia39/aus-ref-clim-data-nci/gpcc/replica/data/full_data_<frequency>_<version>/<grid>/<files>
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_<frequency>_<version>/<grid>/<files>
 ```
 where `<version>` is:
 - `v1`: daily data only on 1.0 X 1.0 degree grid
