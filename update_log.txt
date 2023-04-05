@@ -1,3 +1,22 @@
 First downloaded on 2021-12-22 by Paola Petrelli (paola.petrelli@utas.edu.au)
 Version: v2020
 
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g025
+Directory /g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g025 exists.
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g05
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g10
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g25
+Updated on 2023-04-06 by pxp581
+Version: v2022
+
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g025
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g05
+Directory /g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g05 exists.
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g10
+Directory /g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g10 exists.
+/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g25
+Directory /g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_monthly_v2022/g25 exists.
+Directory /g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_daily_v2022/g10 exists.
+Updated on 2023-04-06 by pxp581
+Version: v2022
+

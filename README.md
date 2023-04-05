@@ -8,7 +8,6 @@ The latest version of the full reanalysis is v2022 for monthly and v2020 for dai
 [monthly](https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-monthly_v2022_doi_download.html) and
 [daily](https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-daily_v2020_doi_download.html)
 they cover from 1891 to respectively 2020 and 2019.
-NB. while v2022 has been released, the actual files are not yet available!
 
 The data is available on 4 global grids for monthly and only at 1.0 degrees resolution for daily:
 - 0.25 degree latitude x 0.25 degree longitude global grid (1440 x 720) - only monthly
