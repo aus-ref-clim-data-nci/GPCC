@@ -1,0 +1,19 @@
+name: Run GPCC download code 
+on: 
+  workflow_dispatch:
+
+jobs:
+  runcode:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run  
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USER}}
+          key: ${{secrets.SSH_KEY}}
+          command_timeout: 30m
+          script: |
+              cd /g/data/ia39/aus-ref-clim-data-nci/gpcc/code
+              version=v2022
+              ./gpcc.sh $version >> update_log.txt
